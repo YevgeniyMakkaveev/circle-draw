@@ -79,9 +79,6 @@ const Canvas = () => {
 
   return (
     <div>
-      <button onClick={clearCanvas} style={{ fontSize: "2em", width: "100px" }}>
-        Clear
-      </button>
       <canvas
         style={{ border: "1px solid #000000" }}
         onMouseDown={startDrawing}
@@ -89,6 +86,9 @@ const Canvas = () => {
         onMouseMove={draw}
         ref={canvasRef}
       />
+      <button onClick={clearCanvas} style={{ fontSize: "2em", width: "100px" }}>
+        Clear
+      </button>
       ;
     </div>
   );
