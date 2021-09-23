@@ -45,6 +45,7 @@ const Canvas = () => {
     const diffX = Math.max(...arrX) - Math.min(...arrX);
     const diffY = Math.max(...arrY) - Math.min(...arrY);
     return (diffX + diffY) / 4;
+    //2 для получения среднего и 2 для получения радиуса из диаметра
   };
 
   const finishDrawing = ({ nativeEvent }) => {
